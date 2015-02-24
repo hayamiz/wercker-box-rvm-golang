@@ -1,5 +1,5 @@
-name: rvm
-version: 0.0.2
+name: rvm-golang
+version: 0.0.3
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@12.04
@@ -20,6 +20,8 @@ packages:
 keywords:
     - ruby
     - rvm
+    - go
+    - golang
 script: |
     # install golang
     go_version="1.4.2"
