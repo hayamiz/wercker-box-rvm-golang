@@ -1,11 +1,11 @@
 name: rvm-golang
-version: 0.0.5
+version: 0.0.6
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: main
 platform: ubuntu@12.04
 description: rvm and golang
 packages:
-    - ruby@1.8.7-p375
+    - ruby@1.8.7-p374
     - ruby@1.9.3-p551
     - ruby@2.0.0-p598
     - ruby@2.1.5
@@ -43,7 +43,7 @@ script: |
     curl -sSL https://get.rvm.io | bash -s stable
     echo "bundler -v~>1.5.1" > $HOME/.rvm/gemsets/global.gems
     source $HOME/.rvm/scripts/rvm
-    rvm install 1.8.7-p375
+    rvm install 1.8.7-p374
     rvm install 1.9.3-p551
     rvm install 2.0.0-p598
     rvm install 2.1.5
